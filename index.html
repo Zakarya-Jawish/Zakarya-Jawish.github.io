@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zakarya Jawish — Flutter Developer</title>
+  <meta name="description" content="Flutter developer in Damascus building production mobile apps — a clinic platform live on Google Play across 30+ clinics.">
+  <meta name="author" content="Zakarya Jawish">
+  <meta name="theme-color" content="#f6f8fc">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zakarya Jawish — Flutter Developer">
+  <meta property="og:description" content="Flutter developer building production mobile apps — a clinic platform live on Google Play across 30+ clinics.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230a66e8'/%3E%3Cstop offset='1' stop-color='%230fa9d6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='800' fill='white' text-anchor='middle'%3EZJ%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    /* يطبّق اللغة والوضع المحفوظين قبل ظهور الصفحة لتجنّب الوميض */
+    (function () {
+      var d = document.documentElement;
+      var get = function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } };
+      var theme = get("theme");
+      if (theme === "dark" || theme === "light") d.setAttribute("data-theme", theme);
+      // الإنجليزية افتراضياً؛ العربية فقط إذا اختارها الزائر سابقاً من زر اللغة
+      d.lang = get("lang") === "ar" ? "ar" : "en";
+      d.dir = d.lang === "ar" ? "rtl" : "ltr";
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true">ZJ</span>
+        <span class="brand-name" id="brandName">Zakarya Jawish</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#experience" data-i18n="nav_experience">Experience</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#education" data-i18n="nav_education">Education</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn lang-btn" id="langBtn" type="button">ع</button>
+        <button class="icon-btn" id="themeBtn" type="button"></button>
+        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav"></button>
+      </div>
+    </div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero">
+      <div class="container hero-inner" id="heroContent"></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="about_eyebrow">About</p>
+          <h2 data-i18n="about_title">Building apps people rely on every day</h2>
+        </header>
+        <div class="reveal" id="aboutContent"></div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="exp_eyebrow">Experience</p>
+          <h2 data-i18n="exp_title">Professional experience</h2>
+        </header>
+        <div class="reveal" id="experienceContent"></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="proj_eyebrow">Projects</p>
+          <h2 data-i18n="proj_title">Selected work</h2>
+          <p data-i18n="proj_intro"></p>
+        </header>
+        <div class="projects" id="projectsContent"></div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="skills_eyebrow">Skills</p>
+          <h2 data-i18n="skills_title">Skills &amp; tools</h2>
+          <p data-i18n="skills_intro"></p>
+        </header>
+        <div class="reveal" id="skillsContent"></div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow" data-i18n="edu_eyebrow">Education</p>
+          <h2 data-i18n="edu_title">Education &amp; achievements</h2>
+        </header>
+        <div class="reveal" id="educationContent"></div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <div class="contact-card reveal" id="contactContent"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner" id="footerContent"></div>
+  </footer>
+
+  <dialog class="gallery" id="gallery" aria-labelledby="galleryTitle">
+    <div class="gallery-head">
+      <h3 id="galleryTitle"></h3>
+      <span class="gallery-count" id="galleryCount"></span>
+      <button class="icon-btn" id="galleryClose" type="button"></button>
+    </div>
+    <div class="gallery-body">
+      <div class="gallery-track" id="galleryTrack" tabindex="0"></div>
+      <button class="gallery-nav prev" id="galleryPrev" type="button"></button>
+      <button class="gallery-nav next" id="galleryNext" type="button"></button>
+    </div>
+  </dialog>
+
+  <noscript><p class="noscript">Please enable JavaScript to view this site. — يرجى تفعيل JavaScript لعرض الموقع.</p></noscript>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
